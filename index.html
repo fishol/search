@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>假装是个搜索起始页</title>
+  <link rel="stylesheet" href="style.css">
+<!--   <script Language="JavaScript" src="javascript.js"></script>  外链js不顶用，body里又写了一遍-->
+</head>
+<body>
+
+   <script type="text/javascript">
+      function toggle(){
+        var sec = document.getElementById('sec');
+        var nav = document.getElementById('navigation');
+        sec.classList.toggle('active')
+        nav.classList.toggle('active')
+      }
+   </script>
+  
+   <section class="banner" id="sec">
+    	
+	<header>
+      <a href="#" class="logo"></a>
+      <div id="toggle" onclick="toggle()"></div>
+    </header>
+	
+
+    <div class="content">
+	    <!-- 
+		 1. 调用Google，注意method=get和action="http://www.google.com/search" ，当然更有一个重点要特别强调，那就是input 文本框的name必须为q，否则提交会失败，返回google搜索首页。至于表单的位置，排版，随意即可。
+		 2. 注意百度搜索关键字的文本框name为word/wd，不能为其它。
+		 -->
+  	 <span style="font-size:18px;">
+			<form method="get" action="https://www.google.com/search?q=" target="_blank">
+				<input name="q" size="40" maxlength="255" type="text" />
+				<input name="btnG" value="谷歌搜索" type="submit" />
+			</form>
+					
+			<form action="https://www.baidu.com/s?ie=UTF-8&wd=" target="_blank">  
+				<input name="word" size="40" type="text" /> 
+				<input value="百度搜索" type="submit" />  
+			</form> 
+			
+			<form action="https://cn.bing.com/search?q=" target="_blank">  
+				<input name="word" size="40" type="text" /> 
+				<input value="必应搜索" type="submit" />  
+			</form> 
+		 </span>
+		 
+    </div>
+	
+	
+	
+   </section>
+  
+
+  <div id="navigation">
+    <ul>
+        <li><a href="#">链接1</a></li>
+        <li><a href="#">链接2</a></li>
+        <li><a href="#">链接3</a></li>
+        <li><a href="#">链接4</a></li>
+        <li><a href="#">链接5</a></li>
+        <li><a href="#">链接6</a></li>
+      </ul>
+    </div>
+
+</body>
+</html>
