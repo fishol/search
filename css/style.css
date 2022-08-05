@@ -38,6 +38,7 @@ body{
     margin: auto;
     margin-bottom: 10px;
     background-color: rgb(243, 219, 8);
+
 }
 
 .input-box{                               /* 提交表单 */
@@ -47,16 +48,15 @@ body{
 
 }
 
-input{                                     /* 输入框  */
-    height: 100%;                          /* 高 */
-    width: 100%;                          /* 宽 */
-    outline: none;                         /* 轮廓 */
+input{                                       /* 输入框  */
+    height: 100%;                            /* 高 */
+    width: 100%;                             /* 宽 */
+    outline: none;                           /* 轮廓 */
     border: 1px rgb(180, 178, 178) solid;              /* 边框大小 颜色 样式 */
-    border-radius: 30px 30px 30px 30px;    /* 边框圆角 */
+    border-radius: 30px 30px 30px 30px;     /* 边框圆角 */
     text-align: center;                     /* 文本居中 */
-    -webkit-tap-highlight-color: transparent;       /* 背景透明 */
-
-
+    background-color:transparent;           /* 背景透明 */
+    
 }
 
  .music{                                    /* 音乐插件 */
@@ -88,10 +88,9 @@ input{                                     /* 输入框  */
     bottom: 10px;
     margin: auto;
 
-
 }
 
 
-a{
-    text-decoration:none;                 /* 链接去下划线 */ 
+ a{
+    text-decoration:none;                 /*链接去下划线*/ 
 }
