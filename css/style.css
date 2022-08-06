@@ -4,11 +4,11 @@
 
 
 body{
-     background-image: url("../img/Universe.jpg"); 
+     background-image: url("../img/Mac.jpg"); 
   /*  background:url("https://cn.bing.com/th?id=OHR.SFSaltFlats_ZH-CN7261637239_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp"); 调用bing当天背景图*/
     background-size: cover;                 /* 背景覆盖 */
     /* background-position: center;            背景居中 */
-     background-repeat: no-repeat;          /* 背景不重复 */
+     background-repeat: repeat;          /* 背景不重复 */
 
 
      /* background:url("https://cn.bing.com/th?id=OHR.SFSaltFlats_ZH-CN7261637239_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp") no-repeat center/cover; */
