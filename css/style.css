@@ -1,115 +1,224 @@
 
 
+html{
+    height: 100%;
+    width: 100%;
+
+}
 
 
 
 body{
-     background-image: url("../img/Mac.jpg"); 
-  /*  background:url("https://cn.bing.com/th?id=OHR.SFSaltFlats_ZH-CN7261637239_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp"); 调用bing当天背景图*/
-    background-size: cover;                 /* 背景覆盖 */
-    /* background-position: center;            背景居中 */
-     background-repeat: repeat;          /* 背景不重复 */
+    /* background-image: url(../img/star.jpg);  */
+    background-size: cover;  
+    background-repeat: repeat;          /* 背景不重复 */
+    background-color: #fff;
 
 
-     /* background:url("https://cn.bing.com/th?id=OHR.SFSaltFlats_ZH-CN7261637239_1920x1080.jpg&rf=LaDigue_1920x1080.jpg&pid=hp") no-repeat center/cover; */
 }
 
 
+*{
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;    /*链接去下划线*/
+}
 
 
+/********************************************************************************************/
 
-.weather{                                 /* 天气 */
-    position:absolute;
+
+#weather{                                 /* 天气 */
+    position:relative;
     width: 200px;
-    height: 40px;
-    left: 10px;
-    top: 10px;
+    height: 150px;
+    float: left;
+    left: 20px;
+    top: 20px;
 }
+
+.sb1{                        /*侧栏导航按钮*/
+    position: absolute;                    /* 绝对定位 */
+    width: 40px;
+    height: 40px;
+    background-color: rgb(5, 135, 241);
+    float: right;
+    right: 20px;
+    top: 20px;
+}
+
+.sb2{
+    position: absolute;                    /* 绝对定位 */
+    /* width: 40px;
+    height: 40px;
+    background-color: rgb(5, 135, 241);
+    float: right;
+    right: 10px;
+    top: 10px; */
+
+
+}
+
+/* .Sidebar{
+
+
+} */
+
+
+/********************************************************************************************/
+
+
 
 
 .fishol{                             
     position:absolute;
-    width: 700px;
-    height: 300px;
+    width: 100%;
+    height: 500px;
     left: 0;
     right: 0;
-    top: 0;
-    bottom: 300px;
+    top: 180px;
     margin: auto;
 
-    border: 3px rgb(180, 178, 178) solid;              /* 边框大小 颜色 样式 */
-
 
 }
 
-#logo{                                    /* logo */
+
+.fishol > #logo{                                    /* logo */
     position:relative;
-    width: 300px;
-    height: 100px;
-    margin: 50px auto 20px auto;
-    background-color: rgb(243, 219, 8);
+    width: 380px;
+    height: 120px;
+    left: 0;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    margin: auto;
+    background-image: url(../img/logo.png);
+    /* background-color: rgb(228, 213, 5); */
 
 }
 
-#input-box{
+.fishol > #search{
     position: relative;
-    width: 600px;                             /* 宽 */
-    height: 50px;                             /* 高 */
-    margin: 20px auto 50px auto;
+    display: flex;
+    width: 692px;             /*调试到吐 不能再改了*/
+    height: 64px;             /*调试到吐 不能再改了*/
+    border-radius: 30px;      /* 矩形圆角输入框 */
+    margin: 0 auto 0 auto;    /* 外边距 上 右 下 左 */
+    top: 80px;
+    border: 1px solid #000;
 
+
+}
+
+img{
+    width: 100%;
+}
+
+
+#icog{                                      /*图标在左*/
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* background-image: url(../ico/g.svg);  HTML里加了*/
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+
+}
+
+#icob{
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* background-image: url(../ico/b.svg);  HTML里加了*/
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#icos{                                      /*图标在右*/
+    position: relative;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-image: url(../ico/s.png);
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+
+}
+
+/* button{
+    position: relative;
+    display: flex;
+    width: 52px;
+    height: 52px;
+    background-color: transparent;
+
+}  */
+
+
+.fishol > form{
+    position: relative;
+    display: flex;
 }
 
 input{
-    width: 526px;                             /* input的宽=#input-box的宽 减去 74（72的左右缩进+2的边框） */
-    height: 46px;                             /* input的高=#input-box的高 减去 4 */
-    outline: none;                            /* 轮廓 */
-    border: 1px rgb(180, 178, 178) solid;              /* 边框大小 颜色 样式 */
-    border-radius: 30px 30px 30px 30px;     /* 边框圆角 */
-    text-align: center;                     /* 文本居中 */
-    background-color: #3cf;                /*透明 transparent;*/
-    font-size: 35px;                        /* 搜索框文字大小 */
-    padding-left: 36px;
-    padding-right:36px;
+    position: relative;
+    display: flex;
+    background-color: transparent;    /* 透明色 */
+    width: 572px;
+    height: 100%;
+    text-align: center;     /*输入文字居中*/
+    font-size: 27px;
+    outline: medium;     /* 选中后无边框 */
+    border: none;       /* 边框透明 */
+    align-items: center;
+    justify-content: center;
 
 }
 
 
+/********************************************************************************************/
 
-.music{                                    /* 音乐插件 */
-    position:absolute;                      /* 绝对定位 */
-    width: 50px;
-    height: 50px;
-    left: 10px;
-    bottom: 10px;
-    background-color: rgb(5, 135, 241);
 
+.music{
+    position:absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(52, 8, 247);
+    left: 20px;
 }
 
-.navigation{                                /*侧栏导航按钮*/
-    position:absolute;                      /* 绝对定位 */
-    width: 50px;
-    height: 50px;
-    right: 10px;
-    top: 10px;
-    background-color: rgb(5, 135, 241);
 
-}
-
-.copyright{                                    /* 底部版权 */
+.copyright{
     position: absolute;
-    left: 0;
-    right: 0;
-    width: 120px;
-    height: 50px;
-    bottom: 1px;
-    margin: auto;
+    bottom: 10px;    
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    line-height: 20px;
+    font-size: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #000;
 }
 
 
-
-
-
-
-
-
-
+a:link{
+    color:#000000;
+}
