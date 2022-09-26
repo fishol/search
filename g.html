@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">   <!-- 调用font-awesome小图标 -->
+        <link rel="stylesheet" href="css/style.css">
+        <script Language="JavaScript" src="js/main.js"></script>
+        <title>飞鱼导航</title>
+    </head>
+
+    <body>
+        <!-- 禁止右键复制  oncontextmenu=self.event.returnValue=false -->
+        <div id="weather">                                               
+            <div id="he-plugin-simple"></div> 
+            <script> 
+                WIDGET = {"CONFIG":{"modules":"31042","background":"5","tmpColor":"666666","tmpSize":"16","cityColor":"666666","citySize":"16","aqiColor":"666666","aqiSize":"16","weatherIconSize":"24","alertIconSize":"18","padding":"10px 10px 10px 10px","shadow":"1","language":"auto","borderRadius":"30","fixed":"false","vertical":"center","horizontal":"center","key":"33fe9ec25681403f83fc6dbb57aa76be"}} 
+            </script> 
+            <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+        </div>                                                              <!-- 和风天气的代码可真特么丑 -->
+
+
+        <div class="sb1">                                       
+        </div>                                                              <!-- 侧栏导航 ≡ -->
+        <div class="sb2">                                            
+        </div>                                                              <!-- 侧栏导航 × -->
+        
+
+            <div class="fishol">                                                         <!-- 主体 -->
+                <div id="logo"> </div>                                                    <!-- LOGO -->
+                    <div id="search">
+                        <div id="icog">
+                            <a href="./index.html"> 
+                                <img src="./ico/g.png"/>
+                            </a>
+                        </div>
+                        <form action="https://www.google.com/search?q=" target="_blank">
+                            <input type="text" placeholder="请输入搜索内容" name="q" x-webkit-speech="" autocomplete="off">
+                        </form>
+                        <div id="icos">
+                            <img src="./ico/s.png"/>
+                        </div>
+                        <!-- <button>O</button>  -->
+                    </div>
+                </div>
+            </div>
+
+
+
+        
+            <!-- <div class="music"> </div>                                                 音乐插件     -->
+
+
+
+            <div class="copyright">
+                <a href="*" target="_blank">博客</a>
+                | 
+                <a href="*" target="_blank">主机</a>
+                | 
+                <a href="*" target="_blank">导航</a>
+                | 
+                <a href="*" target="_blank">关于</a>
+                <br>
+                © 2022 by <a href="*" target="_blank" >FISHOL</a> . All rights reserved.
+            </div>
+          
+
+    </body>
+
+
+</html>
