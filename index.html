@@ -15,19 +15,15 @@
     <body>
         <!-- 禁止右键复制  oncontextmenu=self.event.returnValue=false -->
         <div id="weather">                                               
-            <div id="he-plugin-simple"></div> 
-            <script> 
-                WIDGET = {"CONFIG":{"modules":"31042","background":"5","tmpColor":"666666","tmpSize":"16","cityColor":"666666","citySize":"16","aqiColor":"666666","aqiSize":"16","weatherIconSize":"24","alertIconSize":"18","padding":"10px 10px 10px 10px","shadow":"1","language":"auto","borderRadius":"30","fixed":"false","vertical":"center","horizontal":"center","key":"33fe9ec25681403f83fc6dbb57aa76be"}} 
-            </script> 
-            <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
+            <div id="he-plugin-simple"></div> <script> WIDGET = {"CONFIG":{"modules":"31042","background":"5","tmpColor":"666666","tmpSize":"16","cityColor":"666666","citySize":"16","aqiColor":"666666","aqiSize":"16","weatherIconSize":"24","alertIconSize":"18","padding":"10px 10px 10px 10px","shadow":"1","language":"auto","borderRadius":"30","fixed":"false","vertical":"center","horizontal":"center","key":"33fe9ec25681403f83fc6dbb57aa76be"}} </script> <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
         </div>                                                              <!-- 和风天气的代码可真特么丑 -->
 
 
-        <div class="sb1"></div>                                                              <!-- 侧栏导航 ≡ -->
-        <div class="sb2"></div>                                                              <!-- 侧栏导航 × -->
+        <div id="sb1"></div>                                                              <!-- 侧栏导航 ≡ -->
+        <div id="sb2"></div>                                                              <!-- 侧栏导航 × -->
         
 
-        <div class="fishol">                                                         <!-- 主体 -->
+        <div id="fishol">                                                         <!-- 主体 -->
             <div id="logo"> 
                 <img src="./img/logo.png"/>
             </div>                                                    <!-- LOGO -->
@@ -47,11 +43,11 @@
 
 
         
-            <!-- <div class="music"> </div>                                                 音乐插件     -->
+            <!-- <div id="music"> </div>                                                 音乐插件     -->
 
 
 
-            <div class="copyright">
+            <div id="copyright">
                 <a href="#" target="_blank">博客</a>
                 | 
                 <a href="#" target="_blank">主机</a>
