@@ -17,7 +17,7 @@ body{
 
 
 *{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 0;
     padding: 0;
 
@@ -268,18 +268,18 @@ input{
     }
 
     #icob{
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
 
     #icog{
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
 
     #icos{
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
     }
     
 
