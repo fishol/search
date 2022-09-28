@@ -223,12 +223,8 @@ input{
 
 
     #weather{                                 /* 天气 */
-        position:absolute;
-        width: 200px;
-        height: 150px;
-        left: 80px;
-        top: 20px;
         
+        display: none;             /* 不会改 先删掉 */
     
     }
 
@@ -260,8 +256,8 @@ input{
     
     #fishol > #logo{
         position: relative;
-        width: 200px;
-        height: 66px;
+        width: 250px;
+        height: 83px;
         margin: auto;
         top: 0px;
         bottom: 0px;
@@ -279,7 +275,7 @@ input{
         width: 50%;
         height: 56px;
         text-align: center;         /* 输入文字居中 */
-        font-size: 19px;
+        font-size: 21px;
         outline: medium;            /* 选中后无边框  */
         border: none;             /* 边框透明 */
         margin-left: 1px;
