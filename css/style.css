@@ -17,7 +17,7 @@ body{
 
 
 *{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin: 0;
     padding: 0;
 
@@ -162,8 +162,8 @@ input{
     border: none;              /* 边框透明 */
     /* margin-top: 1px;
     margin-bottom: 1px; */
-    margin-left: 1px;
-    margin-right: 1px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin: auto;
 
 
@@ -267,19 +267,36 @@ input{
 
     }
 
+    #icob{
+        width: 30px;
+        height: 30px;
+    }
+
+    #icog{
+        width: 30px;
+        height: 30px;
+    }
+
+    #icos{
+        width: 30px;
+        height: 30px;
+    }
+    
+
+
 
     
 
     #fishol input{
         background-color: transparent;    /* 透明色 */ 
         width: 50%;
-        height: 56px;
+        height: 46px;
         text-align: center;         /* 输入文字居中 */
         font-size: 21px;
         outline: medium;            /* 选中后无边框  */
         border: none;             /* 边框透明 */
-        margin-left: 1px;
-        margin-right: 1px;
+        margin-left: 0px;
+        margin-right: 0px;
         margin: auto;
     }
 
