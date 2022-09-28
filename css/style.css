@@ -154,7 +154,7 @@ input{
     position: relative;
     display: flex;
     background-color: transparent;    /* 透明色 */ 
-    width: 550px;
+    width: 520px;
     height: 56px;
     text-align: center;         /* 输入文字居中 */
     font-size: 27px;
@@ -192,13 +192,13 @@ input{
 /********************************************************************************************/
 
 
-#music{
+/* #music{
     position:absolute;
     width: 40px;
     height: 40px;
     background-color: rgb(52, 8, 247);
     left: 20px;
-}
+} */
 
 
 #copyright{
@@ -220,6 +220,31 @@ input{
 
 @media (max-width: 600px){
 
+
+
+    #weather{                                 /* 天气 */
+        position:absolute;
+        width: 200px;
+        height: 150px;
+        left: 80px;
+        top: 20px;
+        
+    
+    }
+
+
+
+    #sb1{                        /*侧栏导航按钮*/
+        position: absolute;                    /* 绝对定位 */
+        width: 40px;
+        height: 40px;
+        right: 20px;
+        top: 20px;
+        background-color: skyblue;
+    }
+
+
+
     #fishol{                        /* 为啥手机端不让选from呢 */
 
         position:absolute;
@@ -227,7 +252,7 @@ input{
         height: 500px;
         left: 0;
         right: 0;
-        top: 250px;
+        top: 200px;
         margin: auto;
 
     }
@@ -242,6 +267,7 @@ input{
         bottom: 0px;
         left: 0;
         right: 0;
+        z-index: -1;       /* 固定在最底层 不要挡住天气插件 */
 
     }
 
@@ -253,7 +279,7 @@ input{
         width: 50%;
         height: 56px;
         text-align: center;         /* 输入文字居中 */
-        font-size: 24px;
+        font-size: 19px;
         outline: medium;            /* 选中后无边框  */
         border: none;             /* 边框透明 */
         margin-left: 1px;
