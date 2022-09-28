@@ -7,16 +7,17 @@ html{
 }
 
 body{
-    /* background-image: url(../img/star.jpg);  */
+    /* background-image: url(../img/Mac.jpg);  */
     background-size: cover;  
     background-repeat: repeat;          /* 背景不重复 */
     background-color: #fff;
+    display: flex;
 
 }
 
 
 *{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     margin: 0;
     padding: 0;
 
@@ -40,36 +41,25 @@ img{
 
 
 #weather{                                 /* 天气 */
-    position:relative;
+    position:absolute;
     width: 200px;
     height: 150px;
-    float: left;
     left: 20px;
     top: 20px;
+    
 
 }
 
-.sb1{                        /*侧栏导航按钮*/
+#sb1{                        /*侧栏导航按钮*/
     position: absolute;                    /* 绝对定位 */
     width: 40px;
     height: 40px;
-    background-color: rgb(5, 135, 241);
-    float: right;
     right: 20px;
     top: 20px;
+    background-color: skyblue;
 }
 
-.sb2{
-    position: absolute;                    /* 绝对定位 */
-    /* width: 40px;
-    height: 40px;
-    background-color: rgb(5, 135, 241);
-    float: right;
-    right: 10px;
-    top: 10px; */
 
-
-}
 
 /* .Sidebar{
 
@@ -82,9 +72,9 @@ img{
 
 
 
-.fishol{                             
+#fishol{                             
     position:absolute;
-    width: 100%;
+    width: 755px;
     height: 500px;
     left: 0;
     right: 0;
@@ -95,7 +85,7 @@ img{
 }
 
 
-.fishol > #logo{                                    /* logo */
+#fishol > #logo{                                    /* logo */
     position: relative;
     width: 300px;
     height: 100px;
@@ -111,17 +101,21 @@ img{
 
 
 
-.fishol form{
+#fishol form{
     
     display: flex;            /* 三个框并排了 */
     position: relative;
-    width: 751px;             /*调试到吐 不能再改了*/
+    width: 100%;             /*调试到吐 不能再改了*/
     height: 60px;             /*调试到吐 不能再改了*/
     border-radius: 50px;       /* 矩形圆角输入框 */
     margin: auto;
     top: 80px;
     border: 1px solid #999;
     /* box-shadow: 10px 5px 5px black; */              /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影颜色 */
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+    /* padding-left: 5px;
+    padding-right: 5px; */
+
 
 }
 
@@ -160,7 +154,7 @@ input{
     position: relative;
     display: flex;
     background-color: transparent;    /* 透明色 */ 
-    width: 600px;
+    width: 550px;
     height: 56px;
     text-align: center;         /* 输入文字居中 */
     font-size: 27px;
@@ -198,7 +192,7 @@ input{
 /********************************************************************************************/
 
 
-.music{
+#music{
     position:absolute;
     width: 40px;
     height: 40px;
@@ -207,7 +201,7 @@ input{
 }
 
 
-.copyright{
+#copyright{
     position: absolute;
     bottom: 10px;    
     text-align: center;
@@ -219,5 +213,60 @@ input{
     color: #000;
 }
 
+
+
+/*********************************************************************************************/
+
+
+@media (max-width: 600px){
+
+    #fishol{                        /* 为啥手机端不让选from呢 */
+
+        position:absolute;
+        width: 90%;
+        height: 500px;
+        left: 0;
+        right: 0;
+        top: 250px;
+        margin: auto;
+
+    }
+
+    
+    #fishol > #logo{
+        position: relative;
+        width: 200px;
+        height: 66px;
+        margin: auto;
+        top: 0px;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+
+    }
+
+
+    
+
+    #fishol input{
+        background-color: transparent;    /* 透明色 */ 
+        width: 50%;
+        height: 56px;
+        text-align: center;         /* 输入文字居中 */
+        font-size: 24px;
+        outline: medium;            /* 选中后无边框  */
+        border: none;             /* 边框透明 */
+        margin-left: 1px;
+        margin-right: 1px;
+        margin: auto;
+    }
+
+
+    #copyright{
+        position: absolute;
+        bottom: 10px;    
+        text-align: center;
+    }
+}
 
 
