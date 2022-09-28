@@ -115,7 +115,7 @@ img{
     
     display: flex;            /* 三个框并排了 */
     position: relative;
-    width: 750px;             /*调试到吐 不能再改了*/
+    width: 751px;             /*调试到吐 不能再改了*/
     height: 60px;             /*调试到吐 不能再改了*/
     border-radius: 50px;       /* 矩形圆角输入框 */
     margin: auto;
