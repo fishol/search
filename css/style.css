@@ -6,14 +6,11 @@ html{
 
 }
 
-
-
 body{
     /* background-image: url(../img/star.jpg);  */
     background-size: cover;  
     background-repeat: repeat;          /* 背景不重复 */
     background-color: #fff;
-
 
 }
 
@@ -22,10 +19,20 @@ body{
     /* border: 1px solid black; */
     margin: 0;
     padding: 0;
+
 }
 
 a{
     text-decoration: none;    /*链接去下划线*/
+    border: none;
+    color:#000;
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+
 }
 
 
@@ -39,6 +46,7 @@ a{
     float: left;
     left: 20px;
     top: 20px;
+
 }
 
 .sb1{                        /*侧栏导航按钮*/
@@ -88,108 +96,101 @@ a{
 
 
 .fishol > #logo{                                    /* logo */
-    position:relative;
-    width: 380px;
-    height: 120px;
-    left: 0;
-    right: 0;
+    position: relative;
+    width: 300px;
+    height: 100px;
+    margin: auto;
     top: 0px;
     bottom: 0;
-    margin: auto;
-    background-image: url(../img/logo.png);
-    /* background-color: rgb(228, 213, 5); */
+    left: 0;
+    right: 0;
+    /* background-image: url(../img/logo.png); */
+
 
 }
 
-.fishol > #search{
+
+
+.fishol form{
+    
+    display: flex;            /* 三个框并排了 */
     position: relative;
-    display: flex;
-    width: 692px;             /*调试到吐 不能再改了*/
-    height: 64px;             /*调试到吐 不能再改了*/
-    border-radius: 30px;      /* 矩形圆角输入框 */
-    margin: 0 auto 0 auto;    /* 外边距 上 右 下 左 */
+    width: 750px;             /*调试到吐 不能再改了*/
+    height: 60px;             /*调试到吐 不能再改了*/
+    border-radius: 50px;       /* 矩形圆角输入框 */
+    margin: auto;
     top: 80px;
-    border: 1px solid #000;
-
+    border: 1px solid #999;
+    /* box-shadow: 10px 5px 5px black; */              /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影颜色 */
 
 }
 
-img{
-    width: 100%;
-}
 
 
 #icog{                                      /*图标在左*/
     position: relative;
-    display: flex;
+    display: flex;      /*不加这个a标签会多个框 加了看不出来*/
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     /* background-image: url(../ico/g.svg);  HTML里加了*/
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    margin: auto;
 
 }
 
 #icob{
     position: relative;
-    display: flex;
+    display: flex;    /*不加这个a标签会多个框 加了看不出来*/
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     /* background-image: url(../ico/b.svg);  HTML里加了*/
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+    /* left: 15px; */
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    margin: auto;
 }
 
-#icos{                                      /*图标在右*/
-    position: relative;
-    display: flex;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    background-image: url(../ico/s.png);
-    border-radius: 50%;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-
-
-}
-
-/* button{
-    position: relative;
-    display: flex;
-    width: 52px;
-    height: 52px;
-    background-color: transparent;
-
-}  */
-
-
-.fishol > form{
-    position: relative;
-    display: flex;
-}
 
 input{
     position: relative;
     display: flex;
-    background-color: transparent;    /* 透明色 */
-    width: 572px;
-    height: 100%;
-    text-align: center;     /*输入文字居中*/
+    background-color: transparent;    /* 透明色 */ 
+    width: 600px;
+    height: 56px;
+    text-align: center;         /* 输入文字居中 */
     font-size: 27px;
-    outline: medium;     /* 选中后无边框 */
-    border: none;       /* 边框透明 */
-    align-items: center;
-    justify-content: center;
+    outline: medium;            /* 选中后无边框  */
+    border: none;              /* 边框透明 */
+    /* margin-top: 1px;
+    margin-bottom: 1px; */
+    margin-left: 1px;
+    margin-right: 1px;
+    margin: auto;
+
+
+}
+
+
+
+#icos{                                      /*图标在右*/
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    /* background-image: url(../ico/s.png); */
+    /* left: 15px; */
+    /* margin-left: 10px; */
+    /* margin-right: 10px; */
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    margin: auto;
+
 
 }
 
@@ -219,6 +220,4 @@ input{
 }
 
 
-a:link{
-    color:#000000;
-}
+
