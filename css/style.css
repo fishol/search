@@ -106,7 +106,7 @@ img{
     display: flex;            /* 三个框并排了 */
     position: relative;
     width: 100%;             /*调试到吐 不能再改了*/
-    height: 60px;             /*调试到吐 不能再改了*/
+    height: 54px;             /*调试到吐 不能再改了*/
     border-radius: 50px;       /* 矩形圆角输入框 */
     margin: auto;
     top: 60px;
@@ -155,7 +155,7 @@ input{
     display: flex;
     background-color: transparent;    /* 透明色 */ 
     width: 530px;
-    height: 58px;
+    height: 52px;
     text-align: center;         /* 输入文字居中 */
     font-size: 27px;
     outline: medium;            /* 选中后无边框  */
