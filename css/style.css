@@ -112,42 +112,47 @@ img{
     top: 60px;
     border: 1px solid #999;
     /* box-shadow: 10px 5px 5px black; */              /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影颜色 */
-    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
-    /* padding-left: 5px;
-    padding-right: 5px; */
-
-
+    
 }
 
 
 
-#icog{                                      /*图标在左*/
+
+#fishol form:hover{
+
+    /* box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px; */
+
+    box-shadow: 0px 0px 13px 1px rgba(51, 51, 51, 0.1);
+}
+
+
+
+
+#icog, #icob{                                      /*图标在左*/
     position: relative;
     display: flex;      /*不加这个a标签会多个框 加了看不出来*/
     width: 40px;
     height: 40px;
-    /* border-radius: 50%; */
-    /* background-image: url(../ico/g.svg);  HTML里加了*/
-    /* margin-left: 10px; */
-    /* margin-right: 10px; */
     margin-top: 10px;
     margin-bottom: 10px; 
     margin: auto;
 
 }
 
-#icob{
+#icos{                                      /*图标在右*/
     position: relative;
-    display: flex;    /*不加这个a标签会多个框 加了看不出来*/
     width: 40px;
     height: 40px;
-    /* border-radius: 50%; */
-    /* background-image: url(../ico/b.svg);  HTML里加了*/
-    /* left: 15px; */
+    background-color: transparent;
+    border: none;
     margin-top: 10px;
     margin-bottom: 10px; 
     margin: auto;
+
+
 }
+
+
 
 
 input{
@@ -171,22 +176,7 @@ input{
 
 
 
-#icos{                                      /*图标在右*/
-    position: relative;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    border: none;
-    /* background-image: url(../ico/s.png); */
-    /* left: 15px; */
-    /* margin-left: 10px; */
-    /* margin-right: 10px; */
-    margin-top: 10px;
-    margin-bottom: 10px; 
-    margin: auto;
 
-
-}
 
 
 /********************************************************************************************/
@@ -270,22 +260,10 @@ input{
 
     }
 
-    #icob{
+    #icob, #icog, #icos{
         width: 35px;
         height: 35px;
     }
-
-    #icog{
-        width: 35px;
-        height: 35px;
-    }
-
-    #icos{
-        width: 35px;
-        height: 35px;
-    }
-    
-
 
 
     
