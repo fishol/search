@@ -74,7 +74,7 @@ img{
 
 #fishol{                             
     position:absolute;
-    width: 755px;
+    width: 670px;
     height: 500px;
     left: 0;
     right: 0;
@@ -109,7 +109,7 @@ img{
     height: 60px;             /*调试到吐 不能再改了*/
     border-radius: 50px;       /* 矩形圆角输入框 */
     margin: auto;
-    top: 80px;
+    top: 60px;
     border: 1px solid #999;
     /* box-shadow: 10px 5px 5px black; */              /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影颜色 */
     box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
@@ -154,14 +154,14 @@ input{
     position: relative;
     display: flex;
     background-color: transparent;    /* 透明色 */ 
-    width: 520px;
-    height: 56px;
+    width: 510px;
+    height: 58px;
     text-align: center;         /* 输入文字居中 */
     font-size: 27px;
     outline: medium;            /* 选中后无边框  */
-    border: none;              /* 边框透明 */
-    /* margin-top: 1px;
-    margin-bottom: 1px; */
+    border: none;            /* 边框透明 */
+    margin-top: 1px;
+    margin-bottom: 1px;
     margin-left: 0px;
     margin-right: 0px;
     margin: auto;
@@ -248,16 +248,19 @@ input{
         height: 500px;
         left: 0;
         right: 0;
-        top: 130px;
+        top: 100px;
         margin: auto;
 
     }
 
+
+    
+
     
     #fishol > #logo{
         position: relative;
-        width: 250px;
-        height: 83px;
+        width: 225px;
+        height: 75px;
         margin: auto;
         top: 0px;
         bottom: 0px;
@@ -289,7 +292,7 @@ input{
 
     #fishol input{
         background-color: transparent;    /* 透明色 */ 
-        width: 50%;
+        width: 70%;
         height: 46px;
         text-align: center;         /* 输入文字居中 */
         font-size: 21px;
