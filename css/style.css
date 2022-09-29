@@ -154,7 +154,7 @@ input{
     position: relative;
     display: flex;
     background-color: transparent;    /* 透明色 */ 
-    width: 510px;
+    width: 530px;
     height: 58px;
     text-align: center;         /* 输入文字居中 */
     font-size: 27px;
@@ -292,7 +292,7 @@ input{
 
     #fishol input{
         background-color: transparent;    /* 透明色 */ 
-        width: 70%;
+        width: 65%;
         height: 46px;
         text-align: center;         /* 输入文字居中 */
         font-size: 21px;
