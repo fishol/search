@@ -218,7 +218,7 @@ input{
 
 
     body{
-        background-image: url(../img/fireworks.jpg); 
+        background-image: url(../img/Pikachu.jpeg); 
         background-size: cover;             /* 背景全覆盖 */
         background-repeat: repeat;          /* 背景不重复 */
         /* background-color: #fff; */
@@ -254,7 +254,7 @@ input{
         height: 500px;
         left: 0;
         right: 0;
-        top: 100px;
+        top: 250px;               /* PC端绝对定位 距离顶部100PX 手机端壁纸太好看了 故隐藏logo */
         margin: auto;
 
     }
