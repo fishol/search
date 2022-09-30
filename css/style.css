@@ -258,9 +258,6 @@ input{
     }
 
 
-    
-
-    
     #fishol > #logo{
         position: relative;
         width: 225px;
@@ -279,8 +276,6 @@ input{
         height: 35px;
     }
 
-
-    
 
     #fishol input{
         background-color: transparent;    /* 透明色 */ 
@@ -301,6 +296,10 @@ input{
         bottom: 10px;    
         text-align: center;
     }
+
+
+
+    
 }
 
 
