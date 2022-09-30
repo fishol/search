@@ -7,11 +7,11 @@ html{
 }
 
 body{
-    /* background-image: url(../img/Mac.jpg);  */
-    background-size: cover;  
+    background-image: url(../img/Andromeda.jpg); 
+    background-size: cover;             /* 背景全覆盖 */
     background-repeat: repeat;          /* 背景不重复 */
-    background-color: #fff;
-    display: flex;
+    /* background-color: #fff; */
+    
 
 }
 
@@ -111,7 +111,6 @@ img{
     margin: auto;
     top: 80px;
     border: 1px solid #999;
-    /* box-shadow: 10px 5px 5px black; */              /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影颜色 */
     
 }
 
@@ -122,7 +121,10 @@ img{
 
     /* box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px; */
 
-    box-shadow: 2px 2px 15px 2px rgba(51, 51, 51, 0.1);
+    /* box-shadow: 2px 2px 15px 2px rgba(51, 51, 51, 0.1); */
+
+    box-shadow: 0 0 15px #03a9f4;    /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影颜色 */
+
 }
 
 
@@ -149,10 +151,7 @@ img{
     margin-bottom: 10px; 
     margin: auto;
 
-
 }
-
-
 
 
 input{
@@ -171,10 +170,14 @@ input{
     margin-right: 0px;
     margin: auto;
 
-
 }
 
-
+/* input:focus{
+    border-style:solid;
+    border-color: #03a9f4;
+	box-shadow: 0 0 15px #03a9f4;
+    background-color: #fff;
+} */
 
 
 
@@ -209,6 +212,17 @@ input{
 
 
 @media (max-width: 600px){
+
+
+
+    body{
+        background-image: url(../img/fireworks.jpg); 
+        background-size: cover;             /* 背景全覆盖 */
+        background-repeat: repeat;          /* 背景不重复 */
+        /* background-color: #fff; */
+        
+    
+    }
 
 
 
