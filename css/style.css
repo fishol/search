@@ -117,13 +117,15 @@ img{
 
 
 
-#fishol form:hover{
+#fishol form:hover{    /* 鼠标移到from时的特效 */
 
     /* box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px; */
 
     /* box-shadow: 2px 2px 15px 2px rgba(51, 51, 51, 0.1); */
 
     box-shadow: 0 0 15px #03a9f4;    /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影颜色 */
+    border: 1px solid #03a9f4;
+
 
 }
 
@@ -292,8 +294,14 @@ input{
         margin-left: 0px;
         margin-right: 0px;
         margin: auto;
+        text-transform: none;
+        
+    }
 
 
+
+    input[type='text']::-webkit-input-placeholder {
+        color: transparent;           /* 手机搜索框 文字提示为透明的 */
     }
 
 
