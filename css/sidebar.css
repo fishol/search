@@ -1,0 +1,59 @@
+
+
+/*************************************************侧**栏**导**航*************************************************/
+
+
+#sidebar{                          /* 侧栏 */
+    position: fixed;
+    display: flex;
+    right: -350px;
+    width: 400px;
+    height: 3000px;
+    transition: right .5s ease-in;         /* 从右渐入 0.5秒 匀速 */
+
+}
+
+#sidebar:hover{
+    right: 0px;
+    transition: right .5s ease-in;        /* 从右渐出 0.5秒 匀速 */
+
+}
+
+#sidebar-line{
+    background-color: transparent;        /* 透明边栏 */
+    display: flex;
+    position: relative;
+    left: 0px;
+    width: 50px;
+    height: 100%;
+
+}
+
+#sidebar-main{                        /* 侧栏主体 */
+    background-color: rgb(243, 132, 6);
+    display: flex;
+    position: relative;
+    right: 0px;
+    width: 350px;
+    height: 100%;
+    overflow: auto;                /* 视内容多少增删滚动条 */
+
+}
+
+#yu{
+    position: sticky;               /* 粘滞定位 侧栏头像框 */
+    width: 150px;
+    height: 150px;
+    top: 20px;
+    background-color: blueviolet;
+
+}
+
+#sidebar-nav{
+    background-color: blue;
+    position: absolute;
+    top: 200px;
+    width: 300px;
+    height: 800px;
+
+}
