@@ -6,21 +6,21 @@
 #sidebar{                          /* 侧栏 */
     position: fixed;
     display: flex;
-    right: -350px;
+    right: -350px;                  /* 负值 侧栏默认在浏览器框外 */
     width: 400px;
     height: 3000px;
-    transition: right .5s ease-in;         /* 从右渐入 0.5秒 匀速 */
+    transition: right .5s ease-in;  /* 从右渐入 0.5秒 匀速 */
 
 }
 
 #sidebar:hover{
     right: 0px;
-    transition: right .5s ease-in;        /* 从右渐出 0.5秒 匀速 */
+    transition: right .5s ease-in;  /* 从右渐出 0.5秒 匀速 */
 
 }
 
 #sidebar-line{
-    background-color: transparent;        /* 透明边栏 */
+    background-color: transparent;  /* 透明边栏 */
     display: flex;
     position: relative;
     left: 0px;

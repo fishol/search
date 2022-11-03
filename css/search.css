@@ -11,7 +11,7 @@
 }
 
 #main > #logo{                        /* logo */
-    /* display: none; */       /* 抢戏的logo该删就删 */
+    /* display: none; */         /* 抢戏的logo该删就删 */
     position: absolute;
     width: 300px;
     height: 100px;
@@ -25,7 +25,7 @@
     position: absolute;
     width: 680px;                /* search宽 = input宽 + input左右缩进 */
     height: 50px;
-    border-radius: 50px; 
+    border-radius: 50px;          /* 搜索框左右圆角 */
     border: 1px solid #999;    /* 默认边框颜色 */
 }
 
@@ -73,11 +73,11 @@
     text-align: center;             /* 输入框文字居中 */
     font-size: 25px;
     /* letter-spacing:0px;          字间距 默认值就挺好 不用改 */
-    padding-left: 80px;             /* 左缩进 搜索内容不要挡住图标 */
-    padding-right: 80px;            /* 右缩进 搜索内容不要挡住图标 */
+    padding-left: 80px;             /* margin外边距  padding内边距 */
+    padding-right: 80px;            /* 增加右内边距 也可以当右缩进 */
     border: none;                   /* 输入框无边框 */
-    border-radius: 50px;
     outline: medium;                /* 选中后也无边框 */
+    border-radius: 50px;            /* 输入框左右圆角 */
     background-color: transparent;  /* 透明色 */ 
 }
 
