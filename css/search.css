@@ -45,8 +45,8 @@
 #search #icog{
     position: absolute;
     left: 10px;                     /* 谷歌靠左 */
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     background: url(../img/ico/google.png);
     background-size: cover;
     background-position: center;
@@ -57,8 +57,8 @@
 #search #icob{
     position: absolute;
     left: 10px;                     /* 百度靠左 */
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     background: url(../img/ico/baidu.png);
     background-size: cover;
     background-position: center;
@@ -88,8 +88,8 @@
 #search #icos{
     position: absolute;
     right: 10px;                    /* 搜索靠右 修改为margin-right后 搜索图标会向右溢出 */
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     background: url(../img/ico/search.png);
     background-size: cover;
     background-position: center;
