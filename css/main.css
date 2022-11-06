@@ -4,8 +4,9 @@
 
 body{
     /* background-color: #fff; */
-    /* background-image: url(../img/background/pc/polarbear.jpg); */         /* 本地收藏壁纸 */
-    background-image: url(https://www.todaybing.com/api/today/cn);     /* 调用今日必应壁纸 */
+    /* background-image: url(https://imfishol.github.io/sakura); */
+    background-image: url(../img/background/pc/SpongeBob.jpg);
+    /* background-image: url(https://www.todaybing.com/api/today/cn);  */    /* 调用今日必应壁纸 */
     background-attachment: fixed;       /* 固定背景 */
     background-size: cover;             /* 背景全覆盖 */
     background-repeat: no-repeat;       /* 背景不重复 */
@@ -16,7 +17,7 @@ body{
 *{
     margin: 0;
     padding: 0;
-    /* border: 1px solid black;  */      /* 编辑辅助边框 */
+    /* border: 1px solid black; */      /* 编辑辅助边框 */
 }
 
 a{
@@ -67,6 +68,9 @@ a{
 #footer > a{
     color: #434343;
 }
+
+
+
 
 
 
