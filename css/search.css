@@ -4,10 +4,10 @@
 
 
 #main{                     /* logo+搜索框 */
-    position: fixed;
+    position: relative;
     width: 880px;
     height: 400px;
-    top: -168px;           /* 水平居中 + 垂直居中 + 黄金比例 */
+    top: 168px;           /* 水平居中 + 垂直居中 + 黄金比例 */
 }
 
 #main > #logo{                   /* logo */
@@ -16,7 +16,6 @@
     position: absolute;
     width: 300px;
     height: 100px;
-    /* top: 150px; */
     background: url(../img/fishol/logo.png);
     background-size: cover;       /* 背景全覆盖 */
     background-position: center;  /* 图片居中定位 */
