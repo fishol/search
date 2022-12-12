@@ -6,7 +6,7 @@
 #main{                     /* logo+搜索框 */
     position: fixed;
     width: 880px;
-    height: 400px;
+    height: 450px;
     top: -168px;           /* 水平居中 + 垂直居中 + 黄金比例 */
 }
 
@@ -26,6 +26,7 @@
     position: absolute;
     width: 700px;                 /* search宽 = input宽 + input左右缩进 */
     height: 54px;                 /* input高 = search高 */
+    top: -50px;
     border-radius: 50px;          /* 搜索框左右圆角 */
     border: 1px solid #d4d4d4;     /* 默认边框颜色 */
     transition: all .3s ease-in;
