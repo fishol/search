@@ -68,7 +68,7 @@
     width: 580px;                   /* input宽 + input左右缩进 = search宽 */
     height: 54px;                   /* input高 = search高 */
     text-align: center;             /* 输入框文字居中 */
-    font-size: 21px;
+    font-size: 27px;
     font-family: Arial, Helvetica, sans-serif;
     /* letter-spacing:0px;          字间距 默认值就挺好 不用改 */
     padding-left: 60px;             /* margin外边距  padding内边距 */
