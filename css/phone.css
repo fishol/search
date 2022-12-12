@@ -10,7 +10,7 @@
     html{
         height: 100vh;
         width: 100vw;
-        overflow: hidden;                             /* 隐藏滚动条 防止右边×溢出 */
+        overflow-y: hidden;                             /* 隐藏滚动条 防止右边×溢出 */
         
         /* filter: grayscale(100%) saturate(.8); */  /* 灰度  饱和度  全站黑白滤镜 */
         /* -webkit-filter: grayscale(100%); */       /* 兼容 Safari & Chrome 浏览器  以备不时之需 */
@@ -32,7 +32,7 @@
         overflow: hidden;   /* 隐藏滚动条 防止右边×溢出 */
         height: 100vh;
         width: 100vw;
-        overflow: hidden;                             /* 隐藏滚动条 防止右边×溢出 */
+        overflow-y: hidden;                             /* 隐藏滚动条 防止右边×溢出 */
 
     }
 
@@ -46,10 +46,10 @@
 
 
     #main{                        /* 为啥手机端不让选from呢 */
-        position: relative; 
-        width: 420px;
+        position: fixed; 
+        width: 400px;
         height: 370px;
-        top: 168px;           /* 水平居中 + 垂直居中 + 黄金比例 */
+        top: -268px;           /* 水平居中 + 垂直居中 + 黄金比例 */
     }
 
     #main > #logo{
@@ -61,7 +61,7 @@
 
     #search{                          /* 搜索框 */
         position: absolute;
-        width: 420px;                 /* search宽 = input宽 + input左右缩进 */
+        width: 400px;                 /* search宽 = input宽 + input左右缩进 */
         height: 46px;                 /* input高 = search高 */
         border-radius: 50px;          /* 搜索框左右圆角 */
         border: 1px solid #d4d4d4;     /* 默认边框颜色 */
@@ -77,7 +77,7 @@
     }
 
     #search input{
-        width: 330px;
+        width: 310px;
         height: 46px;
         text-align: center;             /* 输入框文字居中 */
         font-size: 27px;
