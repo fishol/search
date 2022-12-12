@@ -21,7 +21,7 @@
 
     #main{                        /* 为啥手机端不让选from呢 */
         position: relative; 
-        width: 90%;
+        width: 450px;
         height: 370px;
         top: 168px;           /* 水平居中 + 垂直居中 + 黄金比例 */
     }
@@ -35,7 +35,7 @@
 
     #search{                          /* 搜索框 */
         position: absolute;
-        width: 450px;                 /* search宽 = input宽 + input左右缩进 */
+        width: 410px;                 /* search宽 = input宽 + input左右缩进 */
         height: 46px;                 /* input高 = search高 */
         border-radius: 50px;          /* 搜索框左右圆角 */
         border: 1px solid #d4d4d4;     /* 默认边框颜色 */
@@ -45,18 +45,18 @@
     .icon-google,.icon-baidu,.icon-search{
         z-index: 800;
         position: absolute;
-        width: 27px;
-        height: 27px;
-        font-size: 27px;
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
     }
 
     #search input{
-        width: 400px;
+        width: 370px;
         height: 46px;
         text-align: center;             /* 输入框文字居中 */
-        font-size: 13px;
-        padding-left: 25px;             /* margin外边距  padding内边距 */
-        padding-right: 25px;            /* 增加内边距 也可以当左右缩进 */
+        font-size: 7px;
+        padding-left: 20px;             /* margin外边距  padding内边距 */
+        padding-right: 20px;            /* 增加内边距 也可以当左右缩进 */
         border: none;                   /* 输入框无边框 */
         outline: medium;                /* 选中后也无边框 */
         border-radius: 50px;            /* 输入框左右圆角 */
