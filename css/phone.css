@@ -51,7 +51,7 @@
         position: relative; 
         width: 400px;
         height: 370px;
-        top: 168px;           /* 水平居中 + 垂直居中 + 黄金比例 */
+        top: 68px;           /* 水平居中 + 垂直居中 + 黄金比例 */
     }
 
     #main > #logo{
@@ -63,7 +63,7 @@
 
     #search{                          /* 搜索框 */
         position: absolute;
-        width: 400px;                 /* search宽 = input宽 + input左右缩进 */
+        width: 380px;                 /* search宽 = input宽 + input左右缩进 */
         height: 46px;                 /* input高 = search高 */
         border-radius: 50px;          /* 搜索框左右圆角 */
         border: 1px solid #d4d4d4;     /* 默认边框颜色 */
@@ -79,7 +79,7 @@
     }
 
     #search input{
-        width: 310px;
+        width: 290px;
         height: 46px;
         text-align: center;             /* 输入框文字居中 */
         font-size: 27px;
@@ -117,7 +117,7 @@
     }
 
     #footer{                  /* 底部版权 */
-        position: absolute;
+        position: fixed;
         width: 300px;
         display: table;
         height: 20px;
