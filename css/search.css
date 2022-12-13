@@ -48,7 +48,7 @@
 
 .icon-google{
     z-index: 800;
-    left: 10px;  
+    left: 10px;
     width: 38px;
     height: 38px;
     position: absolute;
@@ -57,7 +57,7 @@
 
 .icon-baidu{
     z-index: 800;
-    left: 10px;  
+    left: 10px;
     width: 38px;
     height: 38px;
     position: absolute;
@@ -83,7 +83,7 @@
 }
 
 input:-moz-placeholder,             /* 输入框placeholder值默认颜色 兼容Firefox */
-textarea:-moz-placeholder { 
+textarea:-moz-placeholder {
     color: #fff;
 }
 input:-ms-input-placeholder,        /* 输入框placeholder值默认颜色 兼容Edge */
@@ -91,15 +91,15 @@ textarea:-ms-input-placeholder {
     color: #fff;
 }
 input::-webkit-input-placeholder,   /* 输入框placeholder值默认颜色 兼容Chrome Safari */
-textarea::-webkit-input-placeholder { 
+textarea::-webkit-input-placeholder {
     color: #fff;
 } 
 
 #search input:focus{                                    /* 输入时背景变色 */
     /* background-color: #fff; */                       /* 纯白色 */
-    /* background-color: rgba(0, 0, 0, 0.3);  */            /* 透明黑 如果只加模糊 在浅色背景下字不明显 */
-	backdrop-filter: blur(7px) saturate(.7);          /* 模糊 饱和度 */
-    -webkit-backdrop-filter: blur(7px) saturate(.7);  /* webkit内核 兼容 Safari & Chrome 浏览器 */
+    /* background-color: rgba(0, 0, 0, 0.3); */         /* 透明黑 如果只加模糊 在浅色背景下字不明显 */
+	backdrop-filter: blur(7px) saturate(.7);            /* 模糊 饱和度 */
+    -webkit-backdrop-filter: blur(7px) saturate(.7);    /* webkit内核 兼容 Safari & Chrome 浏览器 */
     
 }
 
