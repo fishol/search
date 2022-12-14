@@ -38,7 +38,6 @@
         overflow-x: hidden;                             /* 隐藏滚动条 防止右边×溢出 */
         overflow-y: hidden;
 
-        -webkit-tap-highlight-color: transparent;    /* 解决移动端屏闪 */
     }
 
     #weather{                 /* 天气 */  
