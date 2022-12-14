@@ -76,7 +76,6 @@
     padding-left: 60px;             /* margin外边距  padding内边距 */
     padding-right: 60px;            /* 增加内边距 也可以当左右缩进 */
     border: none;                   /* 输入框无边框 */
-    outline: medium;                /* 选中后也无边框 */
     border-radius: 50px;            /* 输入框左右圆角 */
     background-color: transparent;  /* 透明色 */ 
     color: #ddd;               /* #d4d4d4  #5F6368 输入时的文字的颜色 */
@@ -96,6 +95,7 @@ textarea::-webkit-input-placeholder {
 } 
 
 #search input:focus{                                    /* 输入时背景变色 */
+    outline: none;                                      /* 选中后也无边框 */
     /* background-color: #fff; */                       /* 纯白色 */
     /* background-color: rgba(0, 0, 0, 0.3); */         /* 透明黑 如果只加模糊 在浅色背景下字不明显 */
 	backdrop-filter: blur(7px) saturate(.7);            /* 模糊 饱和度 */
