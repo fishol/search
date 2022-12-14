@@ -5,13 +5,12 @@
 
 
 
-/* html{    
-    filter: grayscale(100%) saturate(.8);
-    -webkit-filter: grayscale(100%);
-} */
-
-    /* 灰度  饱和度  全站黑白滤镜 */
-    /* 兼容 Safari & Chrome 浏览器  以备不时之需 */
+html{    
+    height: 100vh;
+    width: 100vw;
+    /* filter: grayscale(100%) saturate(.8); */      /* 灰度  饱和度  全站黑白滤镜 */
+    /* -webkit-filter: grayscale(100%); */           /* 兼容 Safari & Chrome 浏览器  以备不时之需 */
+} 
 
     /* 滤镜      灰色指数      饱和度 */
     /* -o-       Presto内核   兼容 Opera 浏览器 */
@@ -31,8 +30,6 @@ body{
     background-attachment: fixed;       /* 背景固定 壁纸图片不会随着页面的滚动而滚动 */
     background-position: center;        /* 背景居中定位 */ 
 
-    height: 100vh;
-    width: 100vw;
     overflow-x: hidden;                 /* 隐藏滚动条 防止右边×溢出 */
     overflow-y: hidden;
 
