@@ -30,6 +30,9 @@ body{
     background-attachment: fixed;       /* 背景固定 壁纸图片不会随着页面的滚动而滚动 */
     background-position: center;        /* 背景居中定位 */ 
 
+    height: 100vh;
+    width: 100vw;
+
     overflow-x: hidden;                 /* 隐藏滚动条 防止右边×溢出 */
     overflow-y: hidden;
 
