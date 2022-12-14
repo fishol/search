@@ -90,20 +90,20 @@
         outline: medium;                /* 选中后也无边框 */
         border-radius: 50px;            /* 输入框左右圆角 */
         background-color: transparent;  /* 透明色 */ 
-        color: #d4d4d4;               /* #d4d4d4  #5F6368 输入时的文字的颜色 */
+        color: #ddd;               /* #d4d4d4  #5F6368 输入时的文字的颜色 */
     }
 
     input:-moz-placeholder,             /* 输入框placeholder值默认颜色 兼容Firefox */
     textarea:-moz-placeholder {
-    color: #d4d4d4;
+    color: #ddd;
     }
     input:-ms-input-placeholder,        /* 输入框placeholder值默认颜色 兼容Edge */
     textarea:-ms-input-placeholder {
-    color: #d4d4d4;
+    color: #ddd;
     }
     input::-webkit-input-placeholder,   /* 输入框placeholder值默认颜色 兼容Chrome Safari */
     textarea::-webkit-input-placeholder {
-    color: #d4d4d4;
+    color: #ddd;
     } 
 
     #search input:focus{                                    /* 输入时背景变色 */
@@ -127,11 +127,11 @@
         text-align: center;   /* 水平居中 */
         font-size: 15px;      /* 字体大小 */
         font-family: Helvetica, Arial, sans-serif;    /* 字体样式 */
-        color: #d4d4d4;
+        color: #ddd;
     }
 
     #footer > a{
-        color: #d4d4d4;
+        color: #ddd;
     }
 
 

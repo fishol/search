@@ -29,7 +29,7 @@
 
 #sidebar .fa-solid{
     font-size: 28px;
-    color: #d4d4d4;;
+    color: #ddd;
     transition: all .2s linear;  /* 导航小图标变大+变色 所用时间 */
 }
 
@@ -46,7 +46,7 @@
 
 label #open,label #close{  /* ≡ × 的统一属性  */
     position: fixed;
-    color: #d4d4d4;
+    color: #ddd;
     /* font-size: 开关图标在视觉上就不一样大 不能设置统一的大小和位置*/    
 }
 

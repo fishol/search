@@ -24,7 +24,7 @@ html{
 
 body{
     /* background-color: #000; */
-    background-image: url(../img/wallpaper/NGC_3324.jpg);                      /* 本地壁纸 */
+    background-image: url(../img/wallpaper/NGC_3324.jpg);                        /* 本地壁纸 */
     /* background-image: url(https://www.todaybing.com/api/today/cn); */                 /* 必应壁纸 */
     /* background-image: url(https://cdn.jsdelivr.net/gh/fishol/wallpaper/NGC_3324.jpg); */   /* 外链壁纸 */
     background-size: cover;             /* 背景全覆盖 */
@@ -32,7 +32,7 @@ body{
     background-attachment: fixed;       /* 背景固定 壁纸图片不会随着页面的滚动而滚动 */
     height: 100vh;
     width: 100vw;
-    overflow-x: hidden;                             /* 隐藏滚动条 防止右边×溢出 */
+    overflow-x: hidden;                 /* 隐藏滚动条 防止右边×溢出 */
     overflow-y: hidden;
 
 }
@@ -65,8 +65,8 @@ a{
     position: fixed;
     width: 150px;
     height: 25px;
-    left: 20px;       /*   42  与右边 ≡ × 保持一致 */
-    top: 36px;        /* 41    与右边 ≡ × 保持一致 */
+    left: 20px;       /* 42  与右边 ≡ × 保持一致 天气插件向右偏22px */
+    top: 41px;        /* 41  与右边 ≡ × 保持一致 */
 }
 
 #footer{                  /* 底部版权 */
@@ -79,11 +79,11 @@ a{
     text-align: center;   /* 水平居中 */
     font-size: 15px;      /* 字体大小 */
     font-family: Helvetica, Arial, sans-serif;    /* 字体样式 */
-    color: #d4d4d4;
+    color: #ddd;
 }
 
 #footer > a{
-    color: #d4d4d4;
+    color: #ddd;
 }
 
 #fishol:hover{
