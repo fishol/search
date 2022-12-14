@@ -1,0 +1,2 @@
+ErrorDocument 404 /index.html 
+DirectoryIndex index.html /path/to/notfound.html
