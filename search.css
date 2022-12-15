@@ -1,0 +1,153 @@
+
+
+
+/*************************************************搜**索**主**体*************************************************/
+
+
+
+#main{                     /* logo+搜索框 */
+    position: relative;
+    width: 880px;
+    height: 450px;
+    top: 168px;           /* 水平居中 + 垂直居中 + 黄金比例 */
+}
+
+#main > #logo{                   /* logo */
+    /* display: none; */         /* 抢戏的logo该删就删 */
+    z-index: 100;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background: url(../img/fishol/logo.png);
+    background-size: cover;       /* 背景全覆盖 */
+    background-position: center;  /* 图片居中定位 */
+    background-repeat: no-repeat; /* 背景不重复 */
+}
+
+#search{                          /* 搜索框 */
+    position: absolute;
+    width: 700px;                 /* search宽 = input宽 + input左右缩进 */
+    height: 54px;                 /* input高 = search高 */
+    border-radius: 50px;          /* 搜索框左右圆角 */
+    border: 1px solid #d4d4d4;  /* 默认边框颜色 */
+    transition: all .3s ease-in;
+}
+
+#main #search:hover{
+    box-shadow: 0 0 38px #03a8f4; /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影颜色 */
+    border: 1px solid #03a8f4;
+}
+
+#main form{
+    display: inline-block;  /* 添加后允许在元素上设置宽度和高度 */
+    position: relative;
+    width: 100%;            /* 宽高最大化 = search的宽高 */
+    height: 100%;
+    border: none;
+}
+
+.icon-google{
+    z-index: 800;
+    left: 10px;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    font-size: 38px;
+}
+
+.icon-baidu{
+    z-index: 800;
+    left: 10px;
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    font-size: 38px;
+}
+
+#search input{ 
+    z-index: 200;
+    /* width: 20em;                 1em = 1个单位的 font-size 此框能写20个字 */
+    width: 580px;                   /* input宽 + input左右缩进 = search宽 */
+    height: 54px;                   /* input高 = search高 */
+    text-align: center;             /* 输入框文字居中 */
+    font-size: 27px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* letter-spacing:0px;          字间距 默认值就挺好 不用改 */
+    padding-left: 60px;             /* margin外边距  padding内边距 */
+    padding-right: 60px;            /* 增加内边距 也可以当左右缩进 */
+    border: none;                   /* 输入框无边框 */
+    border-radius: 50px;            /* 输入框左右圆角 */
+    background-color: transparent;  /* 透明色 */ 
+    color: #ddd;                  /* #d4d4d4  #5F6368 输入时的文字的颜色 */
+}
+
+input:-moz-placeholder,             /* 输入框placeholder值默认颜色 兼容Firefox */
+textarea:-moz-placeholder {
+    color: #ddd;
+}
+input:-ms-input-placeholder,        /* 输入框placeholder值默认颜色 兼容Edge */
+textarea:-ms-input-placeholder { 
+    color: #ddd;
+}
+input::-webkit-input-placeholder,   /* 输入框placeholder值默认颜色 兼容Chrome Safari */
+textarea::-webkit-input-placeholder {
+    color: #ddd;
+} 
+
+#search input:focus{                                    /* 输入时背景变色 */
+    outline: none;                                      /* 选中后也无边框 */
+    /* background-color: #fff; */                       /* 纯白色 */
+    /* background-color: rgba(0, 0, 0, 0.3); */         /* 透明黑 如果只加模糊 在浅色背景下字不明显 */
+	backdrop-filter: blur(7px) saturate(.7);            /* 模糊 饱和度 */
+    -webkit-backdrop-filter: blur(7px) saturate(.7);    /* webkit内核 兼容 Safari & Chrome 浏览器 */
+    
+}
+
+.icon-search{
+    z-index: 800;
+    position: absolute;
+    right: 10px;                    /* 搜索靠右 修改为margin-right后 搜索图标会向右溢出 */
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;                   /* button去边框 */
+    font-size: 38px;
+}
+
+#buy{                     /* 写了很久 欢迎打赏 交流学习 */
+    position: absolute;
+    width: 120px;
+    display: block;
+    height: 30px;
+    line-height: 30px;     /* 行高与高度一致时 垂直居中 */ 
+    bottom: 40px;
+    text-align: center;   /* 文字水平居中 */
+    font-size: 20px;      /* 字体大小 */
+    font-family: Helvetica, Arial, sans-serif;    /* 字体样式 */
+}
+
+#buy > a{
+    /* color: #5F6368; */
+    color: #ddd;
+    cursor: pointer;      /* 鼠标移上去有小手 */
+}
+
+#buy > #qrcode{
+    z-index: 300;
+    display: none;
+    position: fixed;
+    top: 140px;          /* 为了水平居中得以整个视窗定位 我强迫癌晚期了 */
+    width: 300px;
+    height: 400px;
+    border: none;
+    background-image: url(../img/other/alipay.png);
+    background-size: cover;             /* 背景全覆盖 */
+    background-position: center;        /* 图片居中定位 */
+    background-repeat: no-repeat;       /* 背景不重复 */
+}
+
+#buy:hover #qrcode{
+    display: block;
+}
+
+
