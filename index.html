@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_2976468_ema6osn8y0q.css">    <!-- iconfont -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>   <!-- font-awesome -->
@@ -21,13 +22,16 @@
     <meta name="description" content="使用HTML+CSS制作,无框架,可以放进 GitHub page 的浏览器起始页。"/>
     <meta name="keywords" content="魚在线 · 搜索,余天盛,魚起始页,fishol,网站导航,浏览器起始页,起始页源码,"/>
 
-    <activity
-    android:name=".librarycartridge.MyLibraryActivity"
-    android:windowSoftInputMode="adjustNothing" />
 
 </head>
 
 <body>
+
+
+
+
+
+
   <!-- 天气插件 -->
   <div id="weather">
     <div id="he-plugin-simple"></div>
@@ -55,7 +59,30 @@
     }
     </script>
     <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
-</div>
+  </div>
+
+  
+
+<script>
+  document.addEventListener("keyboardWillShow", function() {
+    // 获取软键盘的高度
+    var keyboardHeight = event.keyboardHeight;
+
+    // 获取活动容器
+    var activity = document.getElementById('body');
+
+    // 设置活动容器的高度
+    activity.style.height = (window.innerHeight - keyboardHeight) + "px";
+  });
+
+  document.addEventListener("keyboardWillHide", function() {
+    // 获取活动容器
+    var activity = document.getElementById('body');
+
+    // 设置活动容器的高度为 100%
+    activity.style.height = "100%";
+  });
+</script>
 
 
 
