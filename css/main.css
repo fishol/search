@@ -29,12 +29,11 @@ body{
     background-repeat: no-repeat;       /* 背景不重复 */
     background-attachment: fixed;       /* 背景固定 壁纸图片不会随着页面的滚动而滚动 */
     background-position: center;        /* 背景居中定位 */ 
+    
+    position: absolute;
 
-    height: 100vh;
-    width: 100vw;
-
-    -webkit-tap-highlight-color: transparent;    /* 解决移动端屏闪 */
-
+    height: 100%;
+    width: 100%;
 
 }
 
