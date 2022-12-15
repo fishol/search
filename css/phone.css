@@ -24,8 +24,8 @@
 
 
     body{
-        /* background-color: #000; */
-        background-image: url(../img/wallpaper/Pikachu.jpeg);                                    /* 本地壁纸 */
+        background-color: #000;
+        /* background-image: url(../img/wallpaper/Pikachu.jpeg); */                               /* 本地壁纸 */
         /* background-image: url(https://www.todaybing.com/api/today/cn); */                      /* 必应壁纸 */
         /* background-image: url(https://cdn.jsdelivr.net/gh/fishol/wallpaper/Pikachu.jpeg); */   /* 外链壁纸 */
         background-size: cover;             /* 背景全覆盖 */
