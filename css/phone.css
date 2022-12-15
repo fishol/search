@@ -7,11 +7,11 @@
 
 @media (max-width: 600px){
 
-    html{    
+    /* html{    
 
-        /* filter: grayscale(100%) saturate(.8); */      /* 灰度  饱和度  全站黑白滤镜 */
-        /* -webkit-filter: grayscale(100%); */           /* 兼容 Safari & Chrome 浏览器  以备不时之需 */
-    } 
+        filter: grayscale(100%) saturate(.8);
+        -webkit-filter: grayscale(100%);
+    } */
 
         /* 滤镜      灰色指数      饱和度 */
         /* -o-       Presto内核   兼容 Opera 浏览器 */
