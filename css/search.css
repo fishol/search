@@ -29,7 +29,7 @@
     width: 700px;                 /* search宽 = input宽 + input左右缩进 */
     height: 54px;                 /* input高 = search高 */
     border-radius: 50px;          /* 搜索框左右圆角 */
-    border: 1px solid #d4d4d4;     /* 默认边框颜色 */
+    border: 1px solid #d4d4d4;  /* 默认边框颜色 */
     transition: all .3s ease-in;
 }
 

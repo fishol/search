@@ -9,13 +9,13 @@
     z-index: 1;
     position: fixed;
     top: -700vh;         /* 与下方 #check:checked ~ #sidebar 同时注释掉 可改为静态侧栏 */
-    right: 5px;                          /* 到浏览器右边框的距离 */
+    right: 5px;                      /* 到浏览器右边框的距离 */
     width: 100px;
     height: 100vh;
-    padding-top: 20px;                    /* 到浏览器上边框的距离 */
-    overflow: hidden;
+    padding-top: 20px;               /* 到浏览器上边框的距离 */
+    overflow: hidden;           /* 隐藏滚动条 防止右边×溢出 */
     /* background-color: black; */
-    transition: all 1s ease-in-out;       /* 打开侧栏所用时间 */
+    transition: all 1s ease-in-out;  /* 打开侧栏所用时间 */
 }
 
 #sidebar li{
