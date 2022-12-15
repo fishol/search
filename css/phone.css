@@ -8,8 +8,7 @@
 @media (max-width: 600px){
 
     html{    
-        min-height: 100%;
-        min-width: 100%;
+
         /* filter: grayscale(100%) saturate(.8); */      /* 灰度  饱和度  全站黑白滤镜 */
         /* -webkit-filter: grayscale(100%); */           /* 兼容 Safari & Chrome 浏览器  以备不时之需 */
     } 
@@ -20,23 +19,11 @@
         /* -moz-     Gecko内核    兼容 Firefox 浏览器 */
         /* -webkit-  webkit内核   兼容 Safari & Chrome 浏览器 */
 
-    
-
-
     body{
         /* background-color: #000; */
-        background-image: url(../img/wallpaper/disney.jpg);                                    /* 本地壁纸 */
+        background-image: url(../img/wallpaper/Pikachu.jpg);                                    /* 本地壁纸 */
         /* background-image: url(https://www.todaybing.com/api/today/cn); */                      /* 必应壁纸 */
         /* background-image: url(https://cdn.jsdelivr.net/gh/fishol/wallpaper/Pikachu.jpeg); */   /* 外链壁纸 */
-        background-size: cover;             /* 背景全覆盖 */
-        background-repeat: no-repeat;       /* 背景不重复 */
-        background-attachment: fixed;       /* 背景固定 壁纸图片不会随着页面的滚动而滚动 */
-        background-position: center;        /* 背景居中定位 */ 
-
-        position: absolute;
-
-        min-height: 100vh;
-        min-width: 100vw;
 
     }
 
