@@ -24,7 +24,7 @@
     
 
 
-    body{
+    #wallpaper{
         /* background-color: #000; */
         background-image: url(../img/wallpaper/Pikachu.jpeg);                                    /* 本地壁纸 */
         /* background-image: url(https://www.todaybing.com/api/today/cn); */                      /* 必应壁纸 */
@@ -51,10 +51,10 @@
 
 
     #main{                  /* 为啥手机端不让选from呢 */
-        position: relative; 
+        position: fixed; 
         width: 400px;
         height: 370px;
-        top: 118px;          /* 水平居中 + 垂直居中 + 留出软键盘弹出位置 */
+        top: -118px;          /* 水平居中 + 垂直居中 + 留出软键盘弹出位置 */
     }
 
     #main > #logo{

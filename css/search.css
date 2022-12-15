@@ -6,10 +6,10 @@
 
 
 #main{                     /* logo+搜索框 */
-    position: relative;
+    position: fixed;
     width: 880px;
     height: 450px;
-    top: 168px;           /* 水平居中 + 垂直居中 + 黄金比例 */
+    top: -168px;           /* 水平居中 + 垂直居中 */
 }
 
 #main > #logo{                   /* logo */
