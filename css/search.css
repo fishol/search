@@ -78,7 +78,7 @@
     border: none;                   /* 输入框无边框 */
     border-radius: 50px;            /* 输入框左右圆角 */
     background-color: transparent;  /* 透明色 */ 
-    color: #ddd;               /* #d4d4d4  #5F6368 输入时的文字的颜色 */
+    color: #ddd;                  /* #d4d4d4  #5F6368 输入时的文字的颜色 */
 }
 
 input:-moz-placeholder,             /* 输入框placeholder值默认颜色 兼容Firefox */

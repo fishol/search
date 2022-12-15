@@ -33,27 +33,27 @@
         background-attachment: fixed;       /* 背景固定 壁纸图片不会随着页面的滚动而滚动 */
         background-position: center;        /* 背景居中定位 */ 
 
-        position: absolute;
+        position: fixed;
 
         height: 100%;
         width: 100%;
 
     }
 
-    #weather{                 /* 天气 */  
+    #weather{             /* 天气 */  
         display: none;    /* 放哪都不合适 先删掉 */
     }
 
-    #open,#close,#sidebar{   /* 侧栏导航 */
-        display: none;    /* 不会改 先删掉 */
+    #open,#close,#sidebar{ /* 侧栏导航 */
+        display: none;     /* 不会改 先删掉 */
     }
 
 
-    #main{                        /* 为啥手机端不让选from呢 */
+    #main{                  /* 为啥手机端不让选from呢 */
         position: relative; 
         width: 400px;
         height: 370px;
-        top: 118px;           /* 水平居中 + 垂直居中 + 留出软键盘弹出位置 */
+        top: 118px;          /* 水平居中 + 垂直居中 + 留出软键盘弹出位置 */
     }
 
     #main > #logo{
@@ -91,7 +91,7 @@
         outline: medium;                /* 选中后也无边框 */
         border-radius: 50px;            /* 输入框左右圆角 */
         background-color: transparent;  /* 透明色 */ 
-        color: #ddd;               /* #d4d4d4  #5F6368 输入时的文字的颜色 */
+        color: #ddd;                  /* #d4d4d4  #5F6368 输入时的文字的颜色 */
     }
 
     input:-moz-placeholder,             /* 输入框placeholder值默认颜色 兼容Firefox */
@@ -107,9 +107,9 @@
     color: #ddd;
     } 
 
-    #search input:focus{                                    /* 输入时背景变色 */
-        /* background-color: #fff; */                       /* 纯白色 */
-        background-color: rgba(0, 0, 0, 0.3);             /* 透明黑 如果只加模糊 在浅色背景下字不明显 */
+    #search input:focus{                                  /* 输入时背景变色 */
+        /* background-color: #fff; */                     /* 纯白色 */
+        background-color: rgba(0, 0, 0, 0.3);           /* 透明黑 如果只加模糊 在浅色背景下字不明显 */
         backdrop-filter: blur(7px) saturate(.7);          /* 模糊 饱和度 */
         -webkit-backdrop-filter: blur(7px) saturate(.7);  /* webkit内核 兼容 Safari & Chrome 浏览器 */
     }
