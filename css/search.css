@@ -94,7 +94,7 @@ textarea::-webkit-input-placeholder {
     color: #ddd;
 } 
 
-#search input:focus{                                    /* 输入时背景变色 */
+#search input:focus{                                    /* 输入时修改输入框样式 */
     outline: none;                                      /* 选中后也无边框 */
     /* background-color: #fff; */                       /* 纯白色 */
     /* background-color: rgba(0, 0, 0, 0.3); */         /* 透明黑 如果只加模糊 在浅色背景下字不明显 */
