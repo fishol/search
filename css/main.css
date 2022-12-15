@@ -30,7 +30,7 @@ body{
     background-attachment: fixed;       /* 背景固定 壁纸图片不会随着页面的滚动而滚动 */
     background-position: center;        /* 背景居中定位 */ 
     
-    position: fixed;
+    position: absolute;
 
     min-height: 100vh;
     min-width: 100vw;
