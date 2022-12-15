@@ -27,10 +27,7 @@
 
 <body>
 
-
-
-
-
+  <div id="wallpaper"></div>
 
   <!-- 天气插件 -->
   <div id="weather">
@@ -60,30 +57,6 @@
     </script>
     <script src="https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0"></script>
   </div>
-
-  
-
-<script>
-  document.addEventListener("keyboardWillShow", function() {
-    // 获取软键盘的高度
-    var keyboardHeight = event.keyboardHeight;
-
-    // 获取活动容器
-    var activity = document.getElementById('body');
-
-    // 设置活动容器的高度
-    activity.style.height = (window.innerHeight - keyboardHeight) + "px";
-  });
-
-  document.addEventListener("keyboardWillHide", function() {
-    // 获取活动容器
-    var activity = document.getElementById('body');
-
-    // 设置活动容器的高度为 100%
-    activity.style.height = "100%";
-  });
-</script>
-
 
 
   <!-- 侧栏按钮 -->
