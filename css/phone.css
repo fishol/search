@@ -34,7 +34,7 @@
         background-attachment: fixed;       /* 背景固定 壁纸图片不会随着页面的滚动而滚动 */
         background-position: center;        /* 背景居中定位 */ 
 
-        position: absolute;
+        position: fixed;
 
         min-height: 100vh;
         min-width: 100vw;
@@ -54,7 +54,7 @@
         position: fixed; 
         width: 400px;
         height: 370px;
-        top: -118px;          /* 水平居中 + 垂直居中 + 留出软键盘弹出位置 */
+        top: -68px;          /* 水平居中 + 垂直居中 */
     }
 
     #main > #logo{
