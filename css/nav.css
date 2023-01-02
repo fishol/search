@@ -56,8 +56,6 @@ a{
 a:hover{
     color: #E1F5FE; 
     background-color: #1976D2;
-
-    
 }
 
 li{
@@ -72,5 +70,5 @@ li{
 
 li:hover{
     transform: scale(1.3);          /* 放大1.7倍 */
-    
+
 }
