@@ -34,8 +34,8 @@
 }
 
 #main #search:hover{
-    box-shadow: 0 0 38px #03a8f4; /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影颜色 */
-    border: 1px solid #03a8f4;
+    border: 1px solid #0099ff;
+    box-shadow: 0 0 38px #3cf; /* x偏移量 | y偏移量 | 阴影模糊半径 | 阴影颜色 */
 }
 
 #main form{
@@ -78,7 +78,7 @@
     border: none;                   /* 输入框无边框 */
     border-radius: 50px;            /* 输入框左右圆角 */
     background-color: transparent;  /* 透明色 */ 
-    color: #ddd;                  /* #d4d4d4  #5F6368 输入时的文字的颜色 */
+    color: #ddd;                  /* 输入时的文字的颜色 */
 }
 
 input:-moz-placeholder,             /* 输入框placeholder值默认颜色 兼容Firefox */
@@ -116,7 +116,7 @@ textarea::-webkit-input-placeholder {
 
 #buy{                     /* 写了很久 欢迎打赏 交流学习 */
     position: absolute;
-    width: 120px;
+    width: 100px;
     display: block;
     height: 30px;
     line-height: 30px;     /* 行高与高度一致时 垂直居中 */ 
@@ -124,6 +124,7 @@ textarea::-webkit-input-placeholder {
     text-align: center;   /* 文字水平居中 */
     font-size: 20px;      /* 字体大小 */
     font-family: Helvetica, Arial, sans-serif;    /* 字体样式 */
+    
 }
 
 #buy > a{

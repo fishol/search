@@ -1,0 +1,149 @@
+
+
+
+/*************************************************侧**********栏*************************************************/
+
+
+ 
+#sidebar{
+    z-index: 1;
+    position: fixed;
+    top: -700vh;                     /* 与下方 #check:checked ~ #sidebar 同时注释掉 可改为静态侧栏 */
+    right: 5px;                      /* 到浏览器右边框的距离 */
+    width: 100px;
+    height: 100vh;
+    padding-top: 20px;               /* 到浏览器上边框的距离 */
+    overflow: hidden;                /* 隐藏滚动条 防止右边×溢出 */
+    /* background-color: black; */
+    transition: all 1s ease-in-out;  /* 打开侧栏所用时间 */
+}
+
+#sidebar ul li{
+    display: flex;
+    justify-content: center;   /* 居中对齐 */
+    align-items: center;       /* 水平居中 */
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 52px;              /* 高度固定 下行不颤抖 */
+}
+
+label {                /* label有白边 不知咋整 */
+    height: 527730743px;
+    display: block;
+}
+
+#check{
+    display: none;
+}
+
+label #open,label #close{  /* ≡ × 的统一属性  */
+    position: fixed;
+    color: #ddd;
+    /* font-size: 开关图标在视觉上就不一样大 不能设置统一的大小和位置*/    
+}
+
+label #open{              /* 点击≡ 向下打开 */
+    z-index: 100;
+    right: 42px;          /* 侧栏关闭时 ≡的默认位置 */
+    top: 41px;            /* 侧栏关闭时 ≡的默认位置 */
+    font-size: 30px;
+    transition: all .2s linear;  /* 开关侧栏时 ≡的showtime */
+}
+
+label #close{             /* 点击× 向右关闭 */
+    z-index: 200;
+    top: -1000px;         /* 侧栏关闭时×的位置 在视窗外 从下到上撤出 */
+    right: 0px;           /* 侧栏关闭时×的位置 在视窗外 */
+    font-size: 35px;
+    transition: all .2s linear;  /* 开关侧栏时 ×的showtime */
+}
+
+label #open:hover{
+    font-size: 27px;
+    color: #0099ff; 
+    text-shadow:  0 0 10px #3cf;
+    transform: scale(2.0); 
+}
+
+label #close:hover{
+    font-size: 27px;
+    color: #0099ff; 
+    text-shadow:  0 0 10px #3cf;
+    transform: scale(2.1); 
+}
+
+#check:checked ~ #sidebar{
+    top:0;                /* 与上方 #sidebar之top 同时注释掉 可改为静态侧栏 侧栏默认在右边 从上向下弹出 */
+}
+
+#check:checked ~ label #open{
+    top:30px;             /* ≡在右边 向下弹出 */
+    opacity: 0;           /* 点×后 使≡完全透明 */  
+    pointer-events: none; /* 元素不能对鼠标事件做出反应 */
+}
+
+#check:checked ~ label #close{
+    top: 35px ;           /* 打开时×到上边框的距离 在视窗内 */
+    right: 44px;          /* 打开时×到右边框的距离 在视窗内 */
+}
+
+
+
+/*******************************************************************************/
+
+
+
+#sidebar .fa-solid{
+    font-size: 28px;
+    color: #ddd;
+    transition: all .2s linear;  /* 导航小图标变大+变色 所用时间 */
+}
+
+#sidebar .fa-solid:hover{
+    /* font-size: 40px; */
+    color: #0099ff; 
+    text-shadow: 0 0 10px #3cf;
+    transform: scale(2.0);       /* 按比例放大 */
+}
+
+
+#sidebar ul li .nav {            /* 导航框默认不显示 */
+    z-index: 3000;
+    position: fixed;
+    top: 30px;
+    right: 100px;
+    width: 280px;
+    height: 90%;
+    /* background-color: transparent; */      /* 我想要半透明 不想要全透明 */
+    background-color: #0099ff;     /* 改成半透明的总会先闪一下再半透明 这是为啥呢 */
+    visibility: hidden;
+    transition: visibility .1s ease;   /* 能见度没有半透明嘛 这又是为啥呢 */
+    padding: 20px;
+    border-radius: 50px;
+    border: none;
+    
+
+}
+
+#sidebar ul li i:hover + .nav {  /* 鼠标移到小图标上时 显示对应的导航框 */
+    visibility: visible;
+}
+
+#sidebar ul li .nav:hover{       /* 鼠标移到导航框上时 导航框保持显示 */
+    visibility: visible;
+
+
+}
+
+iframe{
+    border: none;
+    width: 100%;
+    height: 100%;
+    
+}
+
+a {
+    text-decoration: none;  /* 链接去下划线 */
+} 
+
+
