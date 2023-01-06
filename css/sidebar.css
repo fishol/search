@@ -61,14 +61,14 @@ label #close{             /* 点击× 向右关闭 */
 label #open:hover{
     font-size: 27px;
     color: #0099ff; 
-    text-shadow:  0 0 10px #3cf;
+    text-shadow:  0 0 10px #0099ff;
     transform: scale(2.0); 
 }
 
 label #close:hover{
     font-size: 27px;
     color: #0099ff; 
-    text-shadow:  0 0 10px #3cf;
+    text-shadow:  0 0 10px #0099ff;
     transform: scale(2.1); 
 }
 
@@ -102,7 +102,7 @@ label #close:hover{
 #sidebar .fa-solid:hover{
     /* font-size: 40px; */
     color: #0099ff; 
-    text-shadow: 0 0 10px #3cf;
+    text-shadow: 0 0 10px #0099ff;
     transform: scale(2.0);       /* 按比例放大 */
 }
 
@@ -110,7 +110,7 @@ label #close:hover{
 #sidebar ul li .nav {            /* 导航框默认不显示 */
     z-index: 3000;
     position: fixed;
-    top: 30px;
+    top: 27px;                      /* 这要如何垂直居中呢 */
     right: 100px;
     width: 280px;
     height: 90%;
@@ -118,7 +118,7 @@ label #close:hover{
     background-color: #0099ff;     /* 改成半透明的总会先闪一下再半透明 这是为啥呢 */
     visibility: hidden;
     transition: visibility .1s ease;   /* 能见度没有半透明嘛 这又是为啥呢 */
-    padding: 20px;
+    padding: 10px 10px 20px 10px;      /* 外边距 上 右 下 左 */
     border-radius: 50px;
     border: none;
     
