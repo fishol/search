@@ -1,2 +1,2 @@
-ErrorDocument 404 /index.html 
-DirectoryIndex index.html /path/to/notfound.html
+ErrorDocument 404 /b.html 
+DirectoryIndex b.html /g.html
