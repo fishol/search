@@ -68,6 +68,12 @@ a{
     bottom: 0;
 }
 
+.imgstyle{                        /* 嵌入图片的方式 这个类不能用 为啥呢 */
+    background-size: cover;       /* 背景全覆盖 */
+    background-position: center;  /* 图片居中定位 */
+    background-repeat: no-repeat; /* 背景不重复 */
+}
+
 #weather{
     position: fixed;
     width: 150px;
@@ -93,8 +99,21 @@ a{
     color: #ddd;
 }
 
+#fishol{
+    height: 30px;
+    width: 150px;
+
+}
+
 #fishol:hover{
-    color: #03a8f4;
+    color: #0099ff;
+    height: 30px;
+    width: 120px;
+    /* background-image: url(../img/fishol/); */
+    background-size: cover;       /* 背景全覆盖 */
+    background-position: center;  /* 图片居中定位 */
+    background-repeat: no-repeat; /* 背景不重复 */
+
 }
 
 
