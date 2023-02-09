@@ -109,7 +109,7 @@ label #close:hover{
 #sidebar ul li .nav {            /* 导航框默认不显示 */
     z-index: 3000;
     position: fixed;
-    top: 27px;                      /* 这要如何垂直居中呢 */
+    top: 30px;                      /* 这要如何垂直居中呢 */
     right: 100px;
     width: 280px;
     height: 90%;
