@@ -112,3 +112,7 @@ textarea::-webkit-input-placeholder {
     border: none;                   /* button去边框 */
     font-size: 38px;
 }
+
+.icon-search:hover{
+    cursor: pointer;                /* 鼠标移到图标上时 箭头变成小手 */
+}

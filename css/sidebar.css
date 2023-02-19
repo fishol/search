@@ -36,7 +36,7 @@ label {                /* label有白边 不知咋整 */
     display: none;
 }
 
-label #open,label #close{  /* ≡ × 的统一属性  */
+label #open,label #close{ /* ≡ × 的统一属性  */
     position: fixed;
     color: #ddd;
     /* font-size: 开关图标在视觉上就不一样大 不能设置统一的大小和位置*/    
@@ -63,6 +63,7 @@ label #open:hover{
     color: #0099ff; 
     text-shadow:  0 0 10px #0099ff;
     transform: scale(2.0); 
+    cursor: pointer;      /* 鼠标移到图标上时 箭头变成小手 */
 }
 
 label #close:hover{
@@ -70,6 +71,7 @@ label #close:hover{
     color: #0099ff; 
     text-shadow:  0 0 10px #0099ff;
     transform: scale(2.1); 
+    cursor: pointer;      /* 鼠标移到图标上时 箭头变成小手 */
 }
 
 #check:checked ~ #sidebar{
@@ -97,6 +99,8 @@ label #close:hover{
     font-size: 28px;
     color: #ddd;
     transition: all .2s linear;  /* 导航小图标变大+变色 所用时间 */
+    
+
 }
 
 #sidebar .fa-solid:hover{
@@ -104,12 +108,13 @@ label #close:hover{
     color: #0099ff; 
     text-shadow: 0 0 10px #0099ff;
     transform: scale(2.0);       /* 按比例放大 */
+    cursor: pointer;             /* 鼠标移到图标上时 箭头变成小手 */
 }
 
 #sidebar ul li .nav {            /* 导航框默认不显示 */
     z-index: 3000;
     position: fixed;
-    top: 30px;                      /* 这要如何垂直居中呢 */
+    top: 30px;                   /* 这要如何垂直居中呢 */
     right: 100px;
     width: 280px;
     height: 90%;
@@ -144,7 +149,7 @@ iframe{
 #about{
     height: 30px;
     width: 30px;
-    background-image: url(../img/fishol/i.png);
+    background-image: url(../img/fishol/about.png);
     background-size: cover;             /* 背景全覆盖 */
     background-position: center;        /* 图片居中定位 */
     background-repeat: no-repeat;       /* 背景不重复 */
@@ -153,10 +158,11 @@ iframe{
 
 #about:hover{
     transform: scale(1.8);       /* 按比例放大 */
-    background: url(../img/fishol/i.gif);
+    background: url(../img/fishol/about.gif);
     background-size: cover;       /* 背景全覆盖 */
     background-position: center;  /* 图片居中定位 */
     background-repeat: no-repeat; /* 背景不重复 */
+    cursor: pointer;                /* 鼠标移到图标上时 箭头变成小手 */
 }
 
 #about:hover + .nav {  /* 鼠标移到小图标上时 显示对应的导航框 */
