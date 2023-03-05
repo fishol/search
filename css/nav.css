@@ -36,6 +36,7 @@ ul {
     line-height: 50px;
     text-align: center;
     font-size: 40px;
+    border-radius: 50px;       /* 导航标题圆角 */
 }
 
 span p {
