@@ -36,7 +36,7 @@ body{                  /* label有白边 不知咋整 */
     /* background-image: url( ); */      /* 外链壁纸 */
     background-size: cover;             /* 背景全覆盖 */
     background-repeat: no-repeat;       /* 背景不重复 */
-    background-attachment: fixed;       /* 背景固定 壁纸图片不会随着页面的滚动而滚动 */
+    background-attachment: fixed;       /* 背景固定 仅适用于壁纸 图片不会随着页面的滚动而滚动 */
     background-position: center;        /* 背景居中定位 */ 
     min-height: 100vh;
     min-width: 100vw;
@@ -47,7 +47,7 @@ body{                  /* label有白边 不知咋整 */
     margin: 0;
     padding: 0;
     list-style: none;                /* 列表项标记的类型 */
-    /* border: 1px solid black; */     /* 编辑辅助边框 */
+    /* border: 1px solid black; */      /* 编辑辅助边框 */
 }
 
 a{
@@ -81,39 +81,56 @@ a{
     top: 35px;         /* 与右边 ≡ × 同高 */
 }
 
-#footer{                  /* 底部版权 */
+#link{
     position: fixed;
-    width: 300px;
-    display: table;
+    display: flex;
+    justify-content: center; /* 框内水平居中 */
+    align-items: center;     /* 框内垂直居中 */
+    bottom: 40px;
+    width: 400px;
     height: 20px;
-    line-height: 20px;    /* 行高与高度一致时垂直居中 */ 
-    bottom: 10px;
-    text-align: center;   /* 水平居中 */
-    font-size: 15px;      /* 字体大小 */
-    font-family: Helvetica, Arial, sans-serif;    /* 字体样式 */
-    color: #ddd;
-}
-
-#footer > a{
-    color: #ddd;
 }
 
 #fishol{
+    position: fixed;
+    display: flex;
+    justify-content: center; /* 框内水平居中 */
+    align-items: center;     /* 框内垂直居中 */
+    bottom: 7px;
+    width: 350px;
     height: 30px;
-    width: 150px;
-
 }
 
-#fishol:hover{
-    color: #0099ff;
-    height: 30px;
-    width: 120px;
-    /* background-image: url(../img/fishol/); */
+#fishol > #icp{                   /* logo */
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    background: url(../img/other/icp.png);
     background-size: cover;       /* 背景全覆盖 */
     background-position: center;  /* 图片居中定位 */
     background-repeat: no-repeat; /* 背景不重复 */
-
 }
+
+#fishol > a{
+    color: #ddd;
+    font-size: 14px;
+}
+
+#link{
+    color: #ddd;
+    font-size: 18px;
+}
+
+#link > a{
+    color: #ddd;
+    font-size: 14px;
+}
+
+
+
+
+
+
 
 
 
