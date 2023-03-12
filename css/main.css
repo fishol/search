@@ -36,18 +36,17 @@ body{                  /* label有白边 不知咋整 */
     /* background-image: url( ); */      /* 外链壁纸 */
     background-size: cover;             /* 背景全覆盖 */
     background-repeat: no-repeat;       /* 背景不重复 */
-    background-attachment: fixed;       /* 背景固定 仅适用于壁纸 图片不会随着页面的滚动而滚动 */
-    background-position: center;        /* 背景居中定位 */ 
+    background-position: center;        /* 背景居中定位 */
+    background-attachment: fixed;       /* 背景固定 仅适用于壁纸 图片不会随着页面的滚动而滚动 */ 
     min-height: 100vh;
     min-width: 100vw;
-
 }
 
 *{
     margin: 0;
     padding: 0;
     list-style: none;                /* 列表项标记的类型 */
-    /* border: 1px solid black; */      /* 编辑辅助边框 */
+    /* border: 1px solid black; */       /* 编辑辅助边框 */
 }
 
 a{
@@ -97,7 +96,7 @@ a{
     justify-content: center; /* 框内水平居中 */
     align-items: center;     /* 框内垂直居中 */
     bottom: 7px;
-    width: 350px;
+    width: 300px;
     height: 30px;
 }
 
@@ -116,14 +115,15 @@ a{
     font-size: 14px;
 }
 
-#link{
-    color: #ddd;
-    font-size: 18px;
-}
-
 #link > a{
     color: #ddd;
     font-size: 14px;
+    font-family: "黑体", sans-serif;
+}
+
+#link{
+    color: #ddd;
+    font-size: 18px;
 }
 
 
