@@ -96,7 +96,7 @@ a{
     justify-content: center; /* 框内水平居中 */
     align-items: center;     /* 框内垂直居中 */
     bottom: 7px;
-    width: 300px;
+    width: 320px;
     height: 30px;
 }
 
@@ -112,18 +112,18 @@ a{
 
 #fishol > a{
     color: #ddd;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 #link > a{
     color: #ddd;
-    font-size: 14px;
+    font-size: 15px;
     font-family: "黑体", sans-serif;
 }
 
 #link{
     color: #ddd;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
