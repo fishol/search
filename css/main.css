@@ -86,7 +86,7 @@ a{
     justify-content: center; /* 框内水平居中 */
     align-items: center;     /* 框内垂直居中 */
     bottom: 40px;
-    width: 400px;
+    width: 330px;
     height: 20px;
 }
 
@@ -96,7 +96,7 @@ a{
     justify-content: center; /* 框内水平居中 */
     align-items: center;     /* 框内垂直居中 */
     bottom: 7px;
-    width: 320px;
+    width: 326px;
     height: 30px;
 }
 
