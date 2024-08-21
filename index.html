@@ -74,21 +74,56 @@
     <div id="logo" class="spjz"></div>
     
     <div id="search" class="spjz czjz">
-      <form action="https://www.baidu.com/s?wd=" method="get" target="_blank">
-        <a href="./g.html">
+      <form id="searchForm" action="https://www.baidu.com/s?wd=" method="get" target="_blank">
+        <a id="search-icon" href="javascript:void(0);">
           <i class="iconfont icon-baidu czjz"></i>   <!-- Baidu图标 -->
         </a>
         <input type="text" placeholder="请谨慎使用搜索结果" name="wd" x-webkit-speech="" autocomplete="off">
         <button class="iconfont icon-search czjz"></button>   <!-- Search图标 -->
       </form>
     </div>
+    
+    <script>
+      let isBaidu = true; // 初始状态为 Baidu
+    
+      document.getElementById('search-icon').addEventListener('click', function(event) {
+        event.preventDefault(); // 阻止默认链接点击行为
+        var searchDiv = document.getElementById('search');
+        
+        if (isBaidu) {
+          // 切换为 Google 搜索表单
+          searchDiv.innerHTML = `
+            <form action="https://www.google.com/search?q=" method="get" target="_blank">
+              <a id="search-icon" href="javascript:void(0);">
+                <i class="iconfont icon-google czjz"></i>   <!-- Google图标 -->
+              </a>
+              <input type="text" placeholder="跨越长城 走向世界" name="q" x-webkit-speech="" autocomplete="off">
+              <button class="iconfont icon-search czjz"></button>   <!-- Search图标 -->
+            </form>`;
+          isBaidu = false; // 更新状态为 Google
+        } else {
+          // 切换回 Baidu 搜索表单
+          searchDiv.innerHTML = `
+            <form action="https://www.baidu.com/s?wd=" method="get" target="_blank">
+              <a id="search-icon" href="javascript:void(0);">
+                <i class="iconfont icon-baidu czjz"></i>   <!-- Baidu图标 -->
+              </a>
+              <input type="text" placeholder="请谨慎使用搜索结果" name="wd" x-webkit-speech="" autocomplete="off">
+              <button class="iconfont icon-search czjz"></button>   <!-- Search图标 -->
+            </form>`;
+          isBaidu = true; // 更新状态为 Baidu
+        }
+        // 重新为新的图标绑定事件监听器
+        document.getElementById('search-icon').addEventListener('click', arguments.callee);
+      });
+    </script>
 
   </div>
-
+  
 
   <!-- 页脚版权 -->
   <div id="link" class="spjz">
-    <a href="https://www.fishol.net" target="_blank">域名</a>
+    <a href="https://www.fishol.net" target="_blank">商店</a>
     &nbsp;·&nbsp;
     <a href="https://www.fishol.me" target="_blank">博客</a>
     &nbsp;·&nbsp;
@@ -97,8 +132,8 @@
 
   <div id="fishol" class="spjz">
     <a href="mailto:I@YuTianSheng.com">©Fish Online Studio</a>
-    &nbsp;<div id="icp" class="spjz czjz"></div>&nbsp;
-    <a href="https://icp.gov.moe/?keyword=20239097" target="_blank">萌ICP备20239097号</a>
+    <div id="icp" class="spjz czjz"></div>
+    <a href="https://icp.gov.moe/?keyword=20239097" target="_blank">萌 ICP备20239097号</a>
   </div>
 
   <!-- Google tag (gtag.js) -->
