@@ -31,7 +31,7 @@ body{                  /* label有白边 不知咋整 */
 
 #wallpaper{                            /* 壁纸单独拿出来 手机端就不会晃来晃去了 */
     /* background-color: #000; */
-    background-image: url(../img/wallpaper/NGC_3324.jpg);                             /* 本地壁纸 */
+    background-image: url(../img/wallpaper/Cthulhu2.jpg);                             /* 本地壁纸 */
     /* background-image: url(https://bing.shangzhenyang.com/api/1080p); */                    /* 必应壁纸 */
     /* background-image: url( ); */      /* 外链壁纸 */
     background-size: cover;             /* 背景全覆盖 */
