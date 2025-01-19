@@ -22,6 +22,18 @@
     background-size: cover;       /* 背景全覆盖 */
     background-position: center;  /* 图片居中定位 */
     background-repeat: no-repeat; /* 背景不重复 */
+    transition: all .5s ease-in;
+}
+
+#main > #logo:hover {
+    z-index: 100;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background: url(../img/fishol/logo.gif);
+    background-size: cover;       /* 背景全覆盖 */
+    background-position: center;  /* 图片居中定位 */
+    background-repeat: no-repeat; /* 背景不重复 */
 }
 
 #search{                          /* 搜索框 */
